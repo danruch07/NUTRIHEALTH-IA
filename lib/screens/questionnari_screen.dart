@@ -26,7 +26,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         '51 a 60 años',
         'Más de 60 años'
       ],
-      'values': [.1, .2, .3, .4, .5, .6],
+      'values': [.1, .2, .3, .4, .6, .8],
     },
     {
       'question': '¿Con qué frecuencia consumes frutas?',
@@ -38,7 +38,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.4, .3, .2, .1,.0],
     },
     {
       'question': '¿Con qué frecuencia consumes verduras?',
@@ -50,7 +50,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.0, .1, .2, .3,.4],
     },
     {
       'question': '¿Con qué frecuencia consumes carnes rojas?',
@@ -61,7 +61,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         '1 porción a la semana',
         'No consumo'
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.3, .0, .2, .2,.4],
     },
     {
       'question': '¿Con qué frecuencia consumes pescado?',
@@ -85,7 +85,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.4, .0, .2, .1,.3],
     },
     {
       'question': '¿Con qué frecuencia consumes huevo?',
@@ -97,7 +97,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.3, .0, .2, .2,.0],
     },
     {
       'question': '¿Con qué frecuencia consumes embutidos?',
@@ -109,7 +109,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.5, .0, .3, .2,.1],
     },
     {
       'question': '¿Con qué frecuencia consumes lácteos?',
@@ -121,7 +121,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.3, .2, .1, .1,.0],
+      'values': [.4, .0, .2, .1,.1],
     },
     {
       'question': '¿Con qué frecuencia consumes frituras?',
@@ -133,7 +133,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.5, .3, .2, .1,.0],
+      'values': [.9, .7, .2, .1,.0],
     },
     {
       'question': '¿Con qué frecuencia consumes refrescos?',
@@ -146,7 +146,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
 
 
       ],
-      'values': [.5, .3, .2, .1,.0],
+      'values': [.9, .7, .3, .1,.0],
     },
     {
       'question': '¿Con qué frecuencia consumes comida procesada?',
@@ -158,7 +158,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.5, .3, .2, .1,.0],
+      'values': [.8, .6, .3, .1,.0],
     },
     {
       'question': '¿Con qué frecuencia consumes grasas vegetales?',
@@ -170,7 +170,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No consumo'
 
       ],
-      'values': [.4, .3, .2, .1,.0],
+      'values': [.6, .3, .2, .1,.0],
     },
     {
       'question': '¿Tomas?',
@@ -181,7 +181,17 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No'
 
       ],
-      'values': [.5, .3, .1, .0],
+      'values': [.9, .6, .1, .0],
+    },
+    {
+      'question': '¿Fumas?',
+      'options': [
+        'Si',
+        'No',
+        'Ocasionalmente',
+
+      ],
+      'values': [.9, .0, .4],
     },
     {
       'question': '¿Realizas actividad física?',
@@ -192,7 +202,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'Más de 10 horas por semana',
         'No'
       ],
-      'values': [.3, .2, .1, .0,.5],
+      'values': [.4, .2, .1, .0,.6],
     },
     {
       'question': '¿Alguno de tus familiares tiene las siguientes enfermedades?',
@@ -208,10 +218,10 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'No'
 
       ],
-      'values': [.3, .3, .5, .5, .4, 0.5 ,0.2 ,0.3 ,0],
+      'values': [.3, .3, .7, .7, .8, .4 ,.2 ,.6 ,.0],
     },
     {
-      'question': '¿Presentas alguno de los siguientes síntomas?',
+      'question': '¿Presentas constantemente alguno de los siguientes síntomas?',
       'options': [
         'Sed',
         'Orina en exceso',
@@ -219,11 +229,12 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
         'Cansancio',
         'Dolor de cabeza',
         'Dolor de pecho',
+        'Pies hinchados',
         'Mareos',
         'No'
 
       ],
-      'values': [.2, .2, .3, .4, .4, .5,.4,.0],
+      'values': [.3, .4, .3, .4, .5, .6, .8,.4,.0],
     },
   ];
 
@@ -397,7 +408,7 @@ class FuzzyLogic {
       'Síndrome Metabólico': 1.0,
       'Hígado Graso': 0.8,
       'Enfermedad Cardiovascular': 0.5,
-      'Sano':  0.5,
+      'Sano':  1,
     };
     Scaffold(
 
