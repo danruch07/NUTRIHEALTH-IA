@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "404805316404",
+    "project_id": "nutrihealt-da53a",
+    "storage_bucket": "nutrihealt-da53a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404805316404:android:c30c7745c1029e75d97f61",
+        "android_client_info": {
+          "package_name": "com.example.nutrihealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPyoWUKt7m9TmpVWIoKehJozLfVMUCSqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
