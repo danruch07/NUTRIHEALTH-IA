@@ -1,20 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nutrihealth/screens/signup_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  @override
-  _LoginScreenState createState() => _LoginScreenState();
-}
-
-class _LoginScreenState extends State<LoginScreen> {
-  bool passToggle = true;
-
+class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      child: SingleChildScrollView(
+    return Scaffold(
+      body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: [
@@ -37,21 +28,11 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                 padding: EdgeInsets.all(12),
                 child: TextField(
-                  obscureText: passToggle,
+                  obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: "Contraseña",
                     prefixIcon: Icon(Icons.lock),
-                    suffixIcon: InkWell(
-                      onTap: () {
-                        setState(() {
-                          passToggle = !passToggle;
-                        });
-                      },
-                      child: passToggle
-                          ? Icon(CupertinoIcons.eye_slash_fill)
-                          : Icon(CupertinoIcons.eye_fill),
-                    ),
                   ),
                 ),
               ),
@@ -71,11 +52,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                         child: Center(
                           child: Text(
-                            "Iniciar Sesion",
+                            "Iniciar Sesión",
                             style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
@@ -90,48 +72,28 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     "¿Aún no tienes cuenta?",
                     style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black54),
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black54,
+                    ),
                   ),
                   TextButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SignUpScreen()));
-                      },
-                      child: Text(
-                        "CREAR",
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.green),
-                      ))
-                ],
-              ),
-              SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.all(10),
-                child: Text(
-                  "La información presentada en  no debe "
-                      "interpretarse como asesoramiento profesional o recomendaciones médicas.",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.black54,
-                  ),
-                ),
-              ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
-                  child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SignUpScreen()),
+                      );
                     },
-                    child: Text("Regresar",style: TextStyle(color: Colors.green),),
+                    child: Text(
+                      "CREAR",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green,
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
             ],
           ),

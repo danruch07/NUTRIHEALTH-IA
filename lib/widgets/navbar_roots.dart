@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nutrihealth/screens/home_screen.dart';
+import 'package:nutrihealth/screens/agenda_screen.dart';
 import 'package:nutrihealth/screens/questionnari_screen.dart';
+import 'package:nutrihealth/screens/mensajes_screen.dart';
+import 'package:nutrihealth/screens/inicio_screen.dart';
+import '../screens/setting_screen.dart';
 
 class NavBarRoots extends StatefulWidget {
   @override
@@ -10,11 +13,11 @@ class NavBarRoots extends StatefulWidget {
 class _NavBarRootsState extends State<NavBarRoots> {
   int _selectedIndex = 0;
   final _screens = [
-    HomeScreen(),//Inicio
-    Container(), // Mensajes
+    Home(),//Inicio
+    ChatScreen(), // Mensajes
     QuestionnaireScreen(),
-    Container(), // Agenda
-    Container(), // Settings
+    AgendaScreen(), // Agenda
+    Settings(), // Settings
   ];
 
   @override
